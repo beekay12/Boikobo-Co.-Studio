@@ -67,7 +67,7 @@ The website is built using:
 The main webpage is contained in:
 
 ```text
-index(7).html
+index.html
 ```
 
 The HTML provides the structure for the navigation, hero section, services, software stack, contact form, and footer.
@@ -136,13 +136,13 @@ On smaller screens:
 ```text
 Boikobo-Co-Studios/
 │
-├── index(7).html
+├── index.html
 ├── style.css
 ├── company-icon.ico
 └── README.md
 ```
 
-> Make sure `index(7).html` and `style.css` remain in the same directory so the stylesheet loads correctly.
+> Make sure `index.html` and `style.css` remain in the same directory so the stylesheet loads correctly.
 
 ## Getting Started
 
@@ -167,7 +167,7 @@ For editing the website, **Visual Studio Code** is recommended.
 You can modify:
 
 ```text
-index(7).html
+index.html
 ```
 
 for the website's structure and content, and:
