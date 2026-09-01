@@ -1,32 +1,33 @@
 # Boikobo & Co. Studios
 
-A modern studio website for **Boikobo & Co. Studios**, showcasing digital creative services, software capabilities, and a direct contact form for project enquiries.
+A modern studio website for **Boikobo & Co. Studios**, showcasing digital creative services, software capabilities, dynamic interactive behaviors, and a direct contact form for project inquiries.
 
 ## Overview
 
 Boikobo & Co. Studios is a digital creative studio focused on crafting modern digital experiences, visual identities, dynamic media, and digital growth strategies.
 
-The website presents the studio's capabilities through a clean, editorial-inspired interface with a responsive design.
+The website presents the studio's capabilities through a clean, editorial-inspired interface with responsive layout controls, scroll animations, and interactive component routing.
 
 ## Features
 
-* Responsive website layout
+* Responsive, high-performance web layout
 * Modern editorial-style hero section
-* Services/capabilities showcase
-* Software stack section
-* Contact form
-* Direct email contact
-* Smooth hover interactions
-* Responsive mobile layout
-* Ambient gradient background effects
-* Custom typography using Google Fonts
-* Glass-style service cards
+* Services & capabilities showcase with direct interactive form routing
+* Core software stack display
+* Contact form with submission feedback state
+* Direct email contact option
+* Smooth hover interactions & custom scrollbar
+* JavaScript-powered scroll-reveal animations via `IntersectionObserver`
+* Responsive mobile layout with adaptive header controls
+* Ambient gradient background effect
+* Custom typography powered by Google Fonts
+* Glassmorphism service cards
 
 ## Services
 
 The website showcases four primary services:
 
-### Web Design & Development
+### Web Design & Dev
 
 Custom web interfaces and modern applications built with an emphasis on performance, interaction, and clean design.
 
@@ -36,13 +37,13 @@ Visual artwork including football matchday graphics, artist performance posters,
 
 ### Video Production
 
-Video editing and post-production for YouTube creators, vlogs, music videos, and other forms of visual storytelling.
+Video editing and post-production for YouTube creators, vlogs, music videos, and visual storytelling.
 
 ### Digital Marketing
 
-Digital positioning, content distribution, and growth strategies designed to increase visibility and audience reach.
+Digital positioning, content distribution, and growth strategies designed to scale visibility and audience reach.
 
-These services are presented directly in the website's capabilities section.
+*Interactive feature:* Clicking any service card automatically updates the select option in the contact form and smoothly scrolls to the contact section.
 
 ## Software Stack
 
@@ -58,151 +59,106 @@ The website identifies the following core software:
 The website is built using:
 
 * HTML5
-* CSS3
+* CSS3 (Variables, Flexbox, Grid, Glassmorphism, Custom Scrollbars)
+* JavaScript (ES6+, DOM Manipulation, IntersectionObserver API)
 * Google Fonts
 * Formspree
 
 ### HTML
 
-The main webpage is contained in:
+Contained in:
 
 ```text
 index.html
-```
+Defines structure for navigation, hero header, capabilities grid, stack overview, contact form, and footer.
 
-The HTML provides the structure for the navigation, hero section, services, software stack, contact form, and footer.
+CSS
+Contained in:
 
-### CSS
-
-Styling is contained in:
-
-```text
+Plaintext
 style.css
-```
+Controls typography, color variables, grid layouts, scrollbar styling, custom dropdown arrows, glassmorphism cards, and scroll-reveal transitions.
 
-The stylesheet controls the site's typography, colours, responsive layout, cards, forms, gradients, animations, and mobile behaviour.
+JavaScript
+Contained in:
 
-## Design
+Plaintext
+script.js
+Manages progressive enhancement including scroll reveal intersection observer, service card click-to-contact routing, and form submission UI states.
 
+Design
 The site uses an editorial/creative studio aesthetic.
 
-### Typography
-
+Typography
 Two Google Fonts are used:
 
-* **Bodoni Moda** — headings and editorial typography
-* **Plus Jakarta Sans** — body text and interface elements
+Bodoni Moda — section headings and hero typography
 
-### Visual Style
+Plus Jakarta Sans — body text, inputs, navigation, and interface elements
 
-The design incorporates:
+Visual Style
+Soft off-white background (#f2f3ee)
 
-* Soft off-white background
-* Deep purple typography
-* Pink and orange accents
-* Blurred gradient effects
-* Rounded cards
-* Glassmorphism
-* Large editorial-style headings
-* Minimal navigation
+Deep purple typography (#1b0230)
 
-The primary design variables are defined in the CSS root, including the background, text, muted text, accent, card, and border colours.
+Accent pink (#f7389a) & orange (#ff7e47)
 
-## Contact
+Blurred ambient gradient bars with viewport masking
 
-The website includes a contact form where visitors can submit:
+Rounded backdrop-filter glass cards
 
-* Name
-* Email
-* Service required
-* Project message
+Custom accent-pink webkit scrollbar
 
-The form is connected to **Formspree** for submission handling.
+Contact
+The contact form accepts:
 
-A direct email contact option is also provided on the website.
+Name
 
-## Responsive Design
+Email
 
-The website includes a mobile breakpoint at **768px**.
+Service required (Web Design & Dev, Graphic Design, Video Production, Digital Marketing, Other Inquiry)
 
-On smaller screens:
+Project message
 
-* The hero spacing is reduced.
-* The footer changes to a vertical layout.
-* The navigation is hidden to simplify the mobile interface.
+Form submissions are powered by Formspree with client-side status handling to prevent duplicate submissions.
 
-## Project Structure
+Direct email contact is available via bmetsing12@gmail.com.
 
-```text
+Project Structure
+Plaintext
 Boikobo-Co-Studios/
 │
 ├── index.html
 ├── style.css
+├── script.js
 ├── company-icon.ico
 └── README.md
-```
+Ensure index.html, style.css, and script.js stay in the same root directory for accurate asset linking.
 
-> Make sure `index.html` and `style.css` remain in the same directory so the stylesheet loads correctly.
+Getting Started
+1. Download or clone the project
+Place all project files inside your local project folder.
 
-## Getting Started
+2. Run the website
+Open index.html in any modern web browser or use VS Code Live Server extension.
 
-### 1. Download or clone the project
+3. Development
+Recommended editor: Visual Studio Code.
 
-Place all project files into the same folder.
+Modifications can be made in:
 
-### 2. Open the website
+index.html for DOM layout & copy
 
-Open:
+style.css for styling & responsive breakpoints
 
-```text
-index(7).html
-```
+script.js for interactive logic & observer triggers
 
-in a modern web browser.
-
-### 3. Development
-
-For editing the website, **Visual Studio Code** is recommended.
-
-You can modify:
-
-```text
-index.html
-```
-
-for the website's structure and content, and:
-
-```text
-style.css
-```
-
-for its visual design and responsive behaviour.
-
-## Customisation
-
-You can customise:
-
-* Studio name
-* Services
-* Software stack
-* Contact information
-* Colours
-* Typography
-* Navigation
-* Footer information
-* Form fields
-* Background effects
-
-The main colour palette can be quickly modified through the CSS variables at the beginning of `style.css`.
-
-## Credits
-
-**Created by Boikobo**
+Credits
+Created by Boikobo
 
 © 2026 Boikobo & Co. Studios. All rights reserved.
 
-## License
-
+License
 All rights reserved unless otherwise stated.
 
 The website design, content, branding, and original creative assets are not to be reproduced, redistributed, or commercially reused without permission from Boikobo & Co. Studios.
